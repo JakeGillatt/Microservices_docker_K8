@@ -30,11 +30,21 @@ Microservices:
 2-tier architecture has two main layers with direct communication, while microservices consist of smaller, independent services that communicate via APIs. 
 
 #
+# Microservices diagram:
+
+![microservices](https://github.com/JakeGillatt/Microservices_docker_K8/assets/129315605/b8abf05b-d83a-4af3-b76a-c1d2653396d0)
+
+#
 # What is Docker?
 
 Docker is an open-source platform that allows developers to automate the deployment, packaging, and running of applications within isolated containers. Containers are lightweight, standalone environments that encapsulate all the necessary dependencies and libraries required to run an application.
 
 Think of Docker as a tool that creates virtual containers for applications. These containers package the application code along with its dependencies, configuration files, and libraries into a single, self-contained unit. This ensures that the application can run consistently across different environments, such as development, testing, and production, without any compatibility issues.
+
+#
+# Docker Architecture diagram:
+
+![Docker diagram](https://github.com/JakeGillatt/Microservices_docker_K8/assets/129315605/4a665f4d-809e-4c3c-b93c-2a538b4270ad)
 
 #
 # What is Containerisation?
@@ -47,3 +57,4 @@ Docker enables the containerization of applications, which means each applicatio
 # Virtualisation vs Containerisation?
 
 Virtualization abstracts the hardware resources to create complete virtual machines, while Containerization abstracts the operating system resources to create lightweight and isolated containers. Virtualization provides stronger isolation but with higher resource usage, while containerization offers lighter isolation with lower resource overhead. Both approaches have their advantages and are used based on specific requirements and use cases.
+

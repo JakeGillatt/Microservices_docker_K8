@@ -35,3 +35,15 @@ Microservices:
 Docker is an open-source platform that allows developers to automate the deployment, packaging, and running of applications within isolated containers. Containers are lightweight, standalone environments that encapsulate all the necessary dependencies and libraries required to run an application.
 
 Think of Docker as a tool that creates virtual containers for applications. These containers package the application code along with its dependencies, configuration files, and libraries into a single, self-contained unit. This ensures that the application can run consistently across different environments, such as development, testing, and production, without any compatibility issues.
+
+#
+# What is Containerisation?
+
+Containerization is a technique used in software development and deployment that allows applications to run in isolated and portable environments called containers. Containers encapsulate an application along with its dependencies, libraries, and configuration files, providing a consistent and reliable runtime environment.
+
+Docker enables the containerization of applications, which means each application and its dependencies are isolated within its own container. This isolation ensures that the application can run consistently and reliably across different systems.
+
+#
+# Virtualisation vs Containerisation?
+
+Virtualization abstracts the hardware resources to create complete virtual machines, while Containerization abstracts the operating system resources to create lightweight and isolated containers. Virtualization provides stronger isolation but with higher resource usage, while containerization offers lighter isolation with lower resource overhead. Both approaches have their advantages and are used based on specific requirements and use cases.

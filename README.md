@@ -28,3 +28,10 @@ Microservices:
 - The loosely coupled nature of microservices allows for independent development and deployment, making it easier to update or replace individual services without affecting the entire application.
 
 2-tier architecture has two main layers with direct communication, while microservices consist of smaller, independent services that communicate via APIs. 
+
+#
+# What is Docker?
+
+Docker is an open-source platform that allows developers to automate the deployment, packaging, and running of applications within isolated containers. Containers are lightweight, standalone environments that encapsulate all the necessary dependencies and libraries required to run an application.
+
+Think of Docker as a tool that creates virtual containers for applications. These containers package the application code along with its dependencies, configuration files, and libraries into a single, self-contained unit. This ensures that the application can run consistently across different environments, such as development, testing, and production, without any compatibility issues.

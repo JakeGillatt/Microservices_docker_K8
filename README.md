@@ -70,6 +70,7 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 - We can use `docker rm <container id> -f` to delete a container entirely
 - These three commands are called the docker container lifecycle
 2. In your local browser enter `localhost` to check nginx is available
+- Enter `docker exec -it <container id> sh` to go into the container
 3. Run `apt-get update -y` and `apt upgrade -y` to update the container
 4. Install sudo with `apt install sudo`
 5. Install nano with `sudo apt install nano -y`

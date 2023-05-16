@@ -76,5 +76,5 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 6. Run `docker exec -it <container id> /bin/bash` and then `alias docker="winpty docker"`
 7. Enter `docker exec -it <container id> sh` to go into the container
 - As an example we edited the nginx index.html file:
-8. Using  `cd/usr/share/nginx` we then `sudo nano index.html` to edit the file and we entered our own text
+8. Using  `cd /usr/share/nginx` we then `sudo nano index.html` to edit the file and we entered our own text
 9. Save the file and check the changes in the local browser

@@ -58,3 +58,23 @@ Docker enables the containerization of applications, which means each applicatio
 
 Virtualization abstracts the hardware resources to create complete virtual machines, while Containerization abstracts the operating system resources to create lightweight and isolated containers. Virtualization provides stronger isolation but with higher resource usage, while containerization offers lighter isolation with lower resource overhead. Both approaches have their advantages and are used based on specific requirements and use cases.
 
+
+#
+# Launching a Docker container and setting up Nginx
+
+- We can run `docker run hello-world` to test that docker will download an image and run it
+1. In a git bash terminal, run the command `docker run -d -p 80:80 nginx` to install and run nginx on port 80
+- We can use `docker ps` to display the containers that are running
+- We can use `docker stop <container id>` to stop a container
+- We can use `docker start <container id> to start up a container
+- We can use `docker rm <container id> -f` to delete a container entirely
+- These three commands are called the docker container lifecycle
+2. In your local browser enter `localhost` to check nginx is available
+3. Run `apt-get update -y` and `apt upgrade -y` to update the container
+4. Install sudo with `apt install sudo`
+5. Install nano with `sudo apt install nano -y`
+6. Run `docker exec -it <container id> /bin/bash` and then `alias docker="winpty docker"`
+7. Enter `docker exec -it <container id> sh` to go into the container
+- As an example we edited the nginx index.html file:
+8. Using  `cd/usr/share/nginx` we then `sudo nano index.html` to edit the file and we entered our own text
+9. Save the file and check the changes in the local browser

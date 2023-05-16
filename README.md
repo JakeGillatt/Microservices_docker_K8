@@ -97,7 +97,7 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 # Launching the Sparta APP on a Container using Docker with the Dockerfile
 
 1. First i created a new folder in Users/Jake/ called sparta_app. And i created a new Docker Hub repo called sparta-app
-2. Then i added the app folder and created a Dockerfile
+2. Then i added the app folder to my new local folder (sparta_app) and created a Dockerfile there
 3. I then added the following code to the Dockerfile:
 ```
 # base image Nginx

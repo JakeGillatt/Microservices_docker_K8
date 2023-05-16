@@ -78,3 +78,16 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 - As an example we edited the nginx index.html file:
 8. Using  `cd /usr/share/nginx` we then `sudo nano index.html` to edit the file and we entered our own text
 9. Save the file and check the changes in the local browser
+
+#
+# Pushing a Container Image and any changes, to your Docker Hub repo
+
+1. Run the command `docker commit <container_id> <your_new_image_name>`
+2. Run `docker tag <your_new_image_name> <dockerhub_username>/<repository_name>:<newtag>`
+3. Run `docker login` and log in to your docker hub
+4. Run `docker push <dockerhub_username>/<repository_name>:<tag>`
+
+- To save and push any changes after completing this, run `docker commit <container id>` and then `docker push <dockerhub_username>/<repository_name>:<tag>`
+- Your changes will now be pushed to your Docker Hub repo
+
+- To run and download an image on port 90, use `docker run -d -p 90:80 <username>/<repo>:<tagname>`

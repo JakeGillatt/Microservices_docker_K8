@@ -92,3 +92,34 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 - Your changes will now be pushed to your Docker Hub repo
 
 - To download and run an image on port 90, use `docker run -d -p 90:80 <username>/<repo>:<tagname>`
+
+#
+# Launching the Sparta APP on a Container using Docker with the Dockerfile
+
+1. First i created a new folder in Users/Jake/ called sparta_app. And i created a new Docker Hub repo called sparta-app
+2. Then i added the app folder and created a Dockerfile
+3. I then added the following code to the Dockerfile:
+```
+# base image Nginx
+FROM node:16
+
+# who is the owner/creator
+LABEL MAINTAINER=Jake@SPARTA
+
+# copy the app folder
+COPY app/ .
+
+# port 3000
+Expose 3000
+
+# install the app
+RUN npm install
+
+# execute command run
+CMD ["node", "app.js"]
+```
+4. Save the file
+5. Ensure that the other containers using port 80 have been stopped
+6. Build the image with `docker build -t jakegillatt/sparta-app:jake_app .`
+7. Run the image with `docker run -d -p 80:3000 jakegillatt/sparta-app:jake_app`
+8. Enter `localhost` into your browser and the app page should be displayed

@@ -66,7 +66,7 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 1. In a git bash terminal, run the command `docker run -d -p 80:80 nginx` to install and run nginx on port 80
 - We can use `docker ps` to display the containers that are running
 - We can use `docker stop <container id>` to stop a container
-- We can use `docker start <container id> to start up a container
+- We can use `docker start <container id>` to start up a container
 - We can use `docker rm <container id> -f` to delete a container entirely
 - These three commands are called the docker container lifecycle
 2. In your local browser enter `localhost` to check nginx is available

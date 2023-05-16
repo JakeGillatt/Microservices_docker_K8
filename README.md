@@ -90,4 +90,4 @@ Virtualization abstracts the hardware resources to create complete virtual machi
 - To save and push any changes after completing this, run `docker commit <container id>` and then `docker push <dockerhub_username>/<repository_name>:<tagname>`
 - Your changes will now be pushed to your Docker Hub repo
 
-- To run and download an image on port 90, use `docker run -d -p 90:80 <username>/<repo>:<tagname>`
+- To download and run an image on port 90, use `docker run -d -p 90:80 <username>/<repo>:<tagname>`
